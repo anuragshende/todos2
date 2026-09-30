@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+/* Main Container */
+.container {
+    width: 500px;
+    min-height: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.head {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #222;
+}
+
+/* Input Section */
+.input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input input {
+    flex: 1;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input input:focus {
+    border-color: #4f46e5;
+}
+
+.input button {
+    padding: 0 22px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input button:hover {
+    background: #3730a3;
+}
+
+/* Todo Box */
+.todo-info {
+    margin-bottom: 12px;
+}
+
+.to-do {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background: #f8f9fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+/* Checkbox */
+.to-do input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+   
+}
+
+/* Todo Text */
+.todoli {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Buttons */
+.to-do button {
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#ed {
+    background: #f59e0b;
+}
+
+#ed:hover {
+    background: #d97706;
+}
+
+#de {
+    background: #ef4444;
+}
+
+#de:hover {
+    background: #dc2626;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .head {
+        font-size: 27px;
+    }
+
+    .to-do {
+        flex-wrap: wrap;
+    }
+
+    .todoli {
+        font-size: 14px;
+    }
+}
+
